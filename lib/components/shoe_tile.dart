@@ -15,17 +15,17 @@ class ShoeTile extends StatelessWidget {
         color: Colors.grey[100],
         borderRadius: BorderRadius.circular(12)
       ),
-      child: Column(
-        children: [
-          //shoe pic
-          Image.asset(shoe.imagePath),
+      // child: Column(
+      //   children: [
+      //     //shoe pic
+      //     Image.asset(shoe.imagePath),
 
-          //price
+      //     //price
 
 
-          //button to add to cart
-        ],
-      ),
+      //     //button to add to cart
+      //   ],
+      // ),
     );
   }
 }

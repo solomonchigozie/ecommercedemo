@@ -87,6 +87,7 @@ class _ShopPageState extends State<ShopPage> {
             shoe: shoe,
           );
         }))
+
       ],
     );
   }
