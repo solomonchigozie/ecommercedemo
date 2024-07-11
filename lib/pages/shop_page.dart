@@ -1,3 +1,5 @@
+import 'package:ecommercedemo/components/shoe_tile.dart';
+import 'package:ecommercedemo/models/shoe.dart';
 import 'package:flutter/material.dart';
 
 class ShopPage extends StatefulWidget {
@@ -73,8 +75,17 @@ class _ShopPageState extends State<ShopPage> {
           height: 10,
         ),
 
-        Expanded(child: ListView.builder(itemBuilder: (context, index) {
-          return shoTile();
+        Expanded(
+          child: ListView.builder(itemBuilder: (context, index) {
+          //create a shoe
+          Shoe shoe = Shoe(
+              name: 'Air Jordan',
+              price: '24,000',
+              imagePath: 'lib/images/air-force1.png',
+              description: 'Nice shoe');
+          return ShoeTile(
+            shoe: shoe,
+          );
         }))
       ],
     );
